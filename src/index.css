@@ -4,6 +4,7 @@
 /* Apply the font family */
 html, body {
   font-family: 'Nunito', sans-serif;
+  background-color: #FFFFFF;
 }
 @tailwind base;
 @tailwind components;

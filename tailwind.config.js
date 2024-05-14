@@ -6,16 +6,19 @@ export default {
   ],
   theme: {
     extend: {
-      fontFamily: {
-        sans: ['<Your Google Font>', 'Roboto', 'Helvetica', 'Arial', 'sans-serif'],
-      },
       colors: {
-        'deep-blue': '#151b3f',
-        'white-coffee': '#d0a181',
+        "deep-blue": "#151b3f",
+        "white-coffee": "#d0a181",
       },
     },
-    
   },
-  plugins: [],
-}
-
+  daisyui: {
+    themes: [
+      "light",
+    ],
+  },
+  plugins: [
+    require('daisyui')
+  ],
+  
+};
