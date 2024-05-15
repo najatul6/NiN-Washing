@@ -7,7 +7,7 @@ import service6 from "../assets/CardImage/p6.jpg";
 import service7 from "../assets/CardImage/p7.jpg";
 import service8 from "../assets/CardImage/p8.jpg";
 
-export const services = [
+export const servicesItem = [
   {
     serviceImage: `${service1}`,
     serviceTitle: "Driveway Pressure Washing",

@@ -1,7 +1,7 @@
 import { useLocation } from "react-router-dom";
 import { servicesItem } from "../../Utils/servicesItem";
 
-const Services = () => {
+const ServicesCard = () => {
     const location = useLocation()
     console.log(location.pathname);
   return (
@@ -9,23 +9,23 @@ const Services = () => {
         {location.pathname ==="/" ? servicesItem?.slice(0,3).map((service) => (
         <div
           key={service?.serviceTitle}
-          className="card bg-base-100 shadow-xl rounded-none"
+          className="card bg-deep-blue shadow-xl rounded-none"
         >
-            <img src={service?.serviceImage} alt={service?.serviceTitle} />
+            <img src={service?.serviceImage} alt={service?.serviceTitle} className="h-96"/>
           <div className="card-body">
-            <h2 className="card-title">{service?.serviceTitle}</h2>
-            <p>{service?.serviceDescription}</p>
+            <h2 className="card-title text-white-coffee capitalize font-bold">{service?.serviceTitle}</h2>
+            <p className="text-white text-justify">{service?.serviceDescription}</p>
           </div>
         </div>
       )) :servicesItem?.map((service) => (
         <div
           key={service?.serviceTitle}
-          className="card bg-base-100 shadow-xl rounded-none"
+          className="card bg-deep-blue shadow-xl rounded-none"
         >
-            <img src={service?.serviceImage} alt={service?.serviceTitle} />
+            <img src={service?.serviceImage} alt={service?.serviceTitle} className="h-96"/>
           <div className="card-body">
-            <h2 className="card-title">{service?.serviceTitle}</h2>
-            <p>{service?.serviceDescription}</p>
+            <h2 className="card-title text-white-coffee capitalize font-bold">{service?.serviceTitle}</h2>
+            <p className="text-white text-justify">{service?.serviceDescription}</p>
           </div>
         </div>
       ))}
@@ -34,4 +34,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default ServicesCard;
