@@ -6,7 +6,7 @@ const Services = () => {
             <Helmet>
                 <title>NiN Washing | Services</title>
             </Helmet>
-            SErvices
+            <ServicesCard/>
         </div>
     );
 };

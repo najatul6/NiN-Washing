@@ -1,6 +1,8 @@
 import { Helmet } from "react-helmet-async";
 import Banner from "../../Components/Banner/Banner";
 import BannerTxt from "../../Components/Banner/BannerTxt";
+import WhatWeDo from "../../Components/WhatWeDo/WhatWeDo";
+import ServicesCard from "../../Components/ServicesCard/ServicesCard";
 
 const Home = () => {
   return (
@@ -28,9 +30,16 @@ const Home = () => {
           <BannerTxt />
         </div>
       </section>
-      <div className="h-screen text-2xl font-bold text-red-700">
-        <p>hello word</p>
-      </div>
+
+      {/* What we do  */}
+      <section>
+            <WhatWeDo/>
+      </section>
+
+      {/* Service Section  */}
+      <section className="p-5">
+        <ServicesCard/>
+      </section>
     </div>
   );
 };
