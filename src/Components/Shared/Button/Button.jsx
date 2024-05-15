@@ -1,10 +1,10 @@
 
 
-const Button = ({btnText}) => {
+const Button = ({btnText,btnIcon,extraClass,afterIcn}) => {
     return (
         <>
-            <button className="text-lg uppercase font-bold text-white bg-deep-blue px-2 py-1">
-                {btnText}
+            <button className={`${extraClass} flex justify-center items-center gap-2 text-lg uppercase font-bold`}>
+                {afterIcn} {btnText} {btnIcon}
             </button>
         </>
     );

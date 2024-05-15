@@ -1,7 +1,8 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { menuItems } from "../../../Utils/menuItem";
 import brandLogo from "../../../assets/NiNWashing.svg";
 import Button from "../Button/Button";
+import { BiSolidPhoneCall } from "react-icons/bi";
 
 const Header = () => {
   return (
@@ -47,16 +48,16 @@ const Header = () => {
               ))}
             </ul>
           </div>
-          <a className="btn btn-ghost">
+          <Link to="/" className="">
             <img
               src={brandLogo}
               alt="Brand Logo here"
               className="w-28 md:w-full h-full"
             />
-          </a>
+          </Link>
         </div>
-        <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1 ">
+        <div className="navbar-center hidden lg:flex ">
+          <ul className="menu menu-horizontal px-1">
             {menuItems?.map((link) => (
               <li key={link?.label} className="text-lg font-bold">
                 <NavLink
@@ -76,7 +77,7 @@ const Header = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <Button btnText="Call Now" />
+          <Button btnText="Call Now" afterIcn={<BiSolidPhoneCall />} extraClass="bg-deep-blue text-white px-2 py-1 hover:bg-white-coffee hover:text-white animate-bounce"/>
         </div>
       </div>
     </>
