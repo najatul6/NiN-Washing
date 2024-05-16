@@ -1,6 +1,7 @@
 import { Helmet } from "react-helmet-async";
 import PageTitleSection from "../../Components/Shared/PageTitleSection/PageTitleSection";
 import WhatWeDo from "../../Components/WhatWeDo/WhatWeDo";
+import SomeFacts from "../../Components/SomeFacts/SomeFacts";
 
 const About = () => {
   return (
@@ -13,6 +14,7 @@ const About = () => {
         subTitle="We are a locally-owned and family-owned Wesley Chapel business fully insured and licensed."
       />
       <WhatWeDo />
+      <SomeFacts/>
     </div>
   );
 };
