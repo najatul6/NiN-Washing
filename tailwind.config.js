@@ -10,6 +10,9 @@ export default {
         "deep-blue": "#151b3f",
         "white-coffee": "#d0a181",
       },
+      backgroundImage: {
+        'whyChose': "url('./src/assets/whatwedo.jpg')",
+      }
     },
   },
   daisyui: {

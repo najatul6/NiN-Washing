@@ -31,7 +31,7 @@ const WhatWeDo = () => {
               <Button
                 btnText="Learn More"
                 btnIcon={<FaArrowRight />}
-                extraClass="bg-deep-blue hover:bg-white hover:border-2 hover:border-deep-blue text-white hover:text-deep-blue p-2"
+                extraClass="bg-deep-blue hover:bg-white hover:border-2 border-2 hover:border-deep-blue text-white hover:text-deep-blue p-2"
               />
             </Link>
           </div>

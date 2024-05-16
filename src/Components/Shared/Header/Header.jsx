@@ -28,7 +28,7 @@ const Header = () => {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content mt-2 z-[1] p-2 rounded-box w-52"
+              className="menu menu-sm dropdown-content mt-2 z-[99] p-2 rounded-box w-52 bg-base-300 shadow-inner"
             >
               {menuItems?.map((link) => (
                 <li key={link?.label} className="text-lg font-bold">
