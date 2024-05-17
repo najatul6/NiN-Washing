@@ -17,7 +17,7 @@ const Home = () => {
     // Simulate a network request
     setTimeout(() => {
       setLoading(false);
-    }, 3000); // 3 seconds delay
+    }, 1500); 
   }, []);
   return (
     <div>
