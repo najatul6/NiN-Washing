@@ -11,10 +11,14 @@ import FrequentlyQuestion from "../../Components/FrequentlyQuestion/FrequentlyQu
 import { useState } from "react";
 
 const Home = () => {
-  const [isLoading, setIsLoading]=useState(false)
+  const [isLoading, setIsLoading] = useState(true);
   return (
-    <div className="">
-      {isLoading && <div className="w-full h-full flex justify-center items-center z-50"><span className="loading loading-ring loading-lg"></span></div>}
+    <div className="relative">
+      {isLoading && (
+        <div className="w-full h-full flex justify-center items-center absolute top-0 bottom-0 left-0 right-0 z-50">
+          <span className="loading loading-ring loading-lg"></span>
+        </div>
+      )}
       <Helmet>
         <title>NiN Washing | Home</title>
       </Helmet>
