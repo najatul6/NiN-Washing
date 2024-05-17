@@ -1,7 +1,7 @@
 import { FaArrowRight } from "react-icons/fa6";
 import ImageCard from "../ImageCard/ImageCard";
 import Button from "../Shared/Button/Button";
-import { Link, useLocation } from "react-router-dom";
+import {  useLocation } from "react-router-dom";
 
 const WhatWeDo = () => {
   const location = useLocation();
@@ -29,13 +29,12 @@ const WhatWeDo = () => {
           </p>
           <div>
             {location.pathname === "/about" || (
-              <Link to="/about">
                 <Button
+                url="/about"
                   btnText="Learn More"
                   btnIcon={<FaArrowRight />}
                   extraClass="bg-deep-blue hover:bg-white hover:border-2 border-2 hover:border-deep-blue text-white hover:text-deep-blue p-2"
                 />
-              </Link>
             )}
           </div>
         </div>

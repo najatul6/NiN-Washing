@@ -16,6 +16,7 @@ const WhyChoseUs = () => {
         </p>
         <Button
           afterIcn={<FaPhoneAlt />}
+          url="tel:+8801773827414"
           btnText="contact us"
           extraClass="bg-white-coffee text-white hover:bg-transparent border-2 hover:border-white py-2 px-3 rounded-lg"
         />

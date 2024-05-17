@@ -15,7 +15,7 @@ const BannerTxt = () => {
       <Button
         btnText="Get A Free Quote"
         btnIcon={<FaUpRightFromSquare />}
-        url="/"
+        url="/contact"
         extraClass="bg-white text-deep-blue border-2 hover:border-white-coffee hover:bg-transparent hover:text-white-coffee  p-3 shadow-none rounded-xl duration-500"
         />
     </div>

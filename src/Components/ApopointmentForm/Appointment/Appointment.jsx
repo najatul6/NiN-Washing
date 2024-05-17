@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import Button from "../../Shared/Button/Button";
 import { FaFacebook } from "react-icons/fa";
 import { AiFillTwitterCircle } from "react-icons/ai";
@@ -17,33 +16,32 @@ const Appointment = () => {
 
       {/* Social Links  */}
       <div className="flex justify-start items-center gap-6">
-        <Link to="https://www.facebook.com/najatul6/" target="_blank">
-          <Button
-            extraClass=" border-2 hover:bg-transparent hover:text-white-coffee hover:border-white-coffee p-2 rounded-xl text-white text-2xl md:text-3xl"
-            afterIcn={<FaFacebook />}
-          />{" "}
-        </Link>
-        <Link to="https://twitter.com/MNajatul" target="_blank">
-          <Button
-            extraClass=" border-2 hover:bg-transparent hover:text-white-coffee hover:border-white-coffee p-2 rounded-xl text-white text-2xl md:text-3xl"
-            afterIcn={<AiFillTwitterCircle />}
-          />{" "}
-        </Link>
-        <Link to="https://www.instagram.com/najatulislam1/" target="_blank">
-          <Button
-            extraClass=" border-2 hover:bg-transparent hover:text-white-coffee hover:border-white-coffee p-2 rounded-xl text-white text-2xl md:text-3xl"
-            afterIcn={<RiInstagramFill />}
-          />{" "}
-        </Link>
-        <Link
-          to="https://www.youtube.com/@mdnajatulislam8347/featured"
+        <Button
+          url="https://www.facebook.com/najatul6/"
           target="_blank"
-        >
-          <Button
-            extraClass=" border-2 hover:bg-transparent hover:text-white-coffee hover:border-white-coffee p-2 rounded-xl text-white text-2xl md:text-3xl"
-            afterIcn={<TiSocialYoutubeCircular />}
-          />{" "}
-        </Link>
+          extraClass=" border-2 hover:bg-transparent hover:text-white-coffee hover:border-white-coffee p-2 rounded-xl text-white text-2xl md:text-3xl"
+          afterIcn={<FaFacebook />}
+        />
+        <Button
+          url="https://twitter.com/MNajatul"
+          target="_blank"
+          extraClass=" border-2 hover:bg-transparent hover:text-white-coffee hover:border-white-coffee p-2 rounded-xl text-white text-2xl md:text-3xl"
+          afterIcn={<AiFillTwitterCircle />}
+        />
+
+        <Button
+          target="_blank"
+          url="https://www.instagram.com/najatulislam1/"
+          extraClass=" border-2 hover:bg-transparent hover:text-white-coffee hover:border-white-coffee p-2 rounded-xl text-white text-2xl md:text-3xl"
+          afterIcn={<RiInstagramFill />}
+        />
+
+        <Button
+          target="_blank"
+          url="https://www.youtube.com/@mdnajatulislam8347/featured"
+          extraClass=" border-2 hover:bg-transparent hover:text-white-coffee hover:border-white-coffee p-2 rounded-xl text-white text-2xl md:text-3xl"
+          afterIcn={<TiSocialYoutubeCircular />}
+        />
       </div>
     </div>
   );
