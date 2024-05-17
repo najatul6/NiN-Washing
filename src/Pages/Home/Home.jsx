@@ -7,7 +7,6 @@ import ShapeImage from "../../Components/ShapeImage/ShapeImage";
 import ShapeDetails from "../../Components/ShapeImage/ShapeDetails";
 import WhyChoseUs from "../../Components/WhyChoseUs/WhyChoseUs";
 import Button from "../../Components/Shared/Button/Button";
-import { Link } from "react-router-dom";
 import FrequentlyQuestion from "../../Components/FrequentlyQuestion/FrequentlyQuestion";
 
 const Home = () => {
@@ -45,15 +44,18 @@ const Home = () => {
       {/* Service Section  */}
       <section className="p-5 flex flex-col gap-5 justify-center items-center">
         <div className="flex flex-col justify-center items-center">
-          <h1 className="text-2xl md:text-3xl capitalize font-bold text-deep-blue">Our Services</h1>
-          <hr className="border-2 rounded-full border-deep-blue w-full"/>
+          <h1 className="text-2xl md:text-3xl capitalize font-bold text-deep-blue">
+            Our Services
+          </h1>
+          <hr className="border-2 rounded-full border-deep-blue w-full" />
         </div>
         <ServicesCard />
-        <Link to='/services'>
         <Button
           btnIcon="&raquo;"
-          btnText="View All Services" extraClass="bg-deep-blue text-white-coffee py-2 px-2 "/>
-        </Link>
+          url="/services"
+          btnText="View All Services"
+          extraClass="bg-deep-blue border-2 text-white py-2 px-3 hover:text-white-coffee hover:bg-transparent hover:border-white-coffee "
+        />
       </section>
 
       {/* Best Deal section  */}
@@ -69,7 +71,7 @@ const Home = () => {
 
       {/* Frequently Questions Section */}
       <section className="p-2 md:p-5">
-        <FrequentlyQuestion/>
+        <FrequentlyQuestion />
       </section>
     </div>
   );
