@@ -19,19 +19,19 @@ const Appointment = () => {
       <div className="flex justify-start items-center gap-6">
         <Link to="https://www.facebook.com/najatul6/" target="_blank">
           <Button
-            extraClass="bg-white-coffee border-2 hover:bg-transparent p-2 rounded-xl text-white text-2xl md:text-3xl"
+            extraClass=" border-2 hover:bg-transparent hover:text-white-coffee hover:border-white-coffee p-2 rounded-xl text-white text-2xl md:text-3xl"
             afterIcn={<FaFacebook />}
           />{" "}
         </Link>
         <Link to="https://twitter.com/MNajatul" target="_blank">
           <Button
-            extraClass="bg-white-coffee border-2 hover:bg-transparent p-2 rounded-xl text-white text-2xl md:text-3xl"
+            extraClass=" border-2 hover:bg-transparent hover:text-white-coffee hover:border-white-coffee p-2 rounded-xl text-white text-2xl md:text-3xl"
             afterIcn={<AiFillTwitterCircle />}
           />{" "}
         </Link>
         <Link to="https://www.instagram.com/najatulislam1/" target="_blank">
           <Button
-            extraClass="bg-white-coffee border-2 hover:bg-transparent p-2 rounded-xl text-white text-2xl md:text-3xl"
+            extraClass=" border-2 hover:bg-transparent hover:text-white-coffee hover:border-white-coffee p-2 rounded-xl text-white text-2xl md:text-3xl"
             afterIcn={<RiInstagramFill />}
           />{" "}
         </Link>
@@ -40,7 +40,7 @@ const Appointment = () => {
           target="_blank"
         >
           <Button
-            extraClass="bg-white-coffee border-2 hover:bg-transparent p-2 rounded-xl text-white text-2xl md:text-3xl"
+            extraClass=" border-2 hover:bg-transparent hover:text-white-coffee hover:border-white-coffee p-2 rounded-xl text-white text-2xl md:text-3xl"
             afterIcn={<TiSocialYoutubeCircular />}
           />{" "}
         </Link>
