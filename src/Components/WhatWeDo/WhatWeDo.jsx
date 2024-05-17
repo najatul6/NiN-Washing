@@ -6,7 +6,7 @@ import { Link, useLocation } from "react-router-dom";
 const WhatWeDo = () => {
   const location = useLocation();
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 justify-center items-center p-4 md:p-5">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 justify-center items-center p-2 md:p-5">
       <div className="px-2 md:p-5">
         <ImageCard />
       </div>

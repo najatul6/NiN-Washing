@@ -11,29 +11,27 @@ import { slideImages } from "../../Utils/slideImage";
 
 const ImageCard = () => {
   return (
-    <>
+    <div className="p-2 overflow-hidden">
       <Swiper
-        centeredSlides={true}
-        autoplay={{
+        loop={true}
+          autoplay={{
             delay: 1500,
             disableOnInteraction: false,
-        }}
-        loop={true}
+          }}
+          
+        centeredSlides={true}
         effect={"cards"}
         grabCursor={true}
-        modules={[Autoplay, EffectCards]}
+        modules={[Autoplay,EffectCards]}
         className="mySwiper p-2 md:p-10"
       >
         {slideImages?.map((image) => (
           <SwiperSlide key={image?.id}>
-            <img
-              src={image?.image}
-              alt="Banner is here"
-            />
+            <img src={image?.image} alt="Banner is here" />
           </SwiperSlide>
         ))}
       </Swiper>
-    </>
+    </div>
   );
 };
 

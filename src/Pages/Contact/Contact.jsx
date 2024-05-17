@@ -1,5 +1,6 @@
 import { Helmet } from "react-helmet-async";
 import PageTitleSection from "../../Components/Shared/PageTitleSection/PageTitleSection";
+import AppointmentForm from "../../Components/ApopointmentForm/AppointmentForm";
 
 const Contact = () => {
   return (
@@ -11,7 +12,9 @@ const Contact = () => {
         title="Contact Us"
         subTitle="Need to book an appointment or an emergency help? Get in touch with us now and our representative will help you soon."
       />
-      <div></div>
+      <div>
+        <AppointmentForm/>
+      </div>
     </div>
   );
 };
