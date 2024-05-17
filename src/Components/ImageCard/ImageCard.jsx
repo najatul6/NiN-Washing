@@ -13,9 +13,7 @@ const ImageCard = () => {
   return (
     <div className="p-2 overflow-hidden">
       <Swiper
-        
-          
-        centeredSlides={true}
+        // centeredSlides={true}
         effect={"cards"}
         grabCursor={true}
         modules={[EffectCards]}

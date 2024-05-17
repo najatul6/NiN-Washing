@@ -15,7 +15,7 @@ const Banner = () => {
       <Swiper
         centeredSlides={true}
         autoplay={{
-          delay: 1500,
+          delay: 3000,
           disableOnInteraction: false,
         }}
         

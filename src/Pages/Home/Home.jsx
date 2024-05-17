@@ -20,7 +20,7 @@ const Home = () => {
     }, 1500); 
   }, []);
   return (
-    <div>
+    <div className="scroll-smooth">
       <Helmet>
         <title>NiN Washing | Home</title>
       </Helmet>
