@@ -6,23 +6,19 @@ import "swiper/css";
 import "swiper/css/effect-cards";
 
 // import required modules
-import { Autoplay, EffectCards } from "swiper/modules";
+import {  EffectCards } from "swiper/modules";
 import { slideImages } from "../../Utils/slideImage";
 
 const ImageCard = () => {
   return (
     <div className="p-2 overflow-hidden">
       <Swiper
-        loop={true}
-          autoplay={{
-            delay: 1500,
-            disableOnInteraction: false,
-          }}
+        
           
         centeredSlides={true}
         effect={"cards"}
         grabCursor={true}
-        modules={[Autoplay,EffectCards]}
+        modules={[EffectCards]}
         className="mySwiper p-2 md:p-10"
       >
         {slideImages?.map((image) => (
