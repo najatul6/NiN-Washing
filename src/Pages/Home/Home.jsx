@@ -8,10 +8,13 @@ import ShapeDetails from "../../Components/ShapeImage/ShapeDetails";
 import WhyChoseUs from "../../Components/WhyChoseUs/WhyChoseUs";
 import Button from "../../Components/Shared/Button/Button";
 import FrequentlyQuestion from "../../Components/FrequentlyQuestion/FrequentlyQuestion";
+import { useState } from "react";
 
 const Home = () => {
+  const [isLoading, setIsLoading]=useState(false)
   return (
     <div className="">
+      {isLoading && <div className="w-full h-full flex justify-center items-center z-50"><span className="loading loading-ring loading-lg"></span></div>}
       <Helmet>
         <title>NiN Washing | Home</title>
       </Helmet>
