@@ -3,7 +3,7 @@ import { FaPhoneAlt } from "react-icons/fa";
 
 const WhyChoseUs = () => {
   return (
-    <div className="bg-whyChose w-full bg-cover bg-fixed px-5 py-10 md:p-36">
+    <div className="!bg-whyChose w-full bg-cover bg-fixed px-5 py-10 md:p-36">
       <div className="flex flex-col gap-6 justify-center items-center bg-deep-blue rounded-2xl py-5 px-7 md:py-20 md:px-10">
         <h2 className="text-base md:text-xl lg:text-3xl font-bold text-white-coffee">
           Why Choose Us?
