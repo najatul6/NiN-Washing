@@ -9,7 +9,7 @@ const CallNow = () => {
       </div>
       <div>
         <h2>Our cleaning experts are only a call away!</h2>
-        <Button btnText="Call Now" extraClass="bg-deep-blue text-white border-2 hover:text-white-coffee hover:bg-transparent hover:border-white-coffee"/>
+        <Button url="https://www.youtube.com" btnText="Call Now" extraClass="bg-deep-blue text-white border-2 hover:text-white-coffee hover:bg-transparent hover:border-white-coffee"/>
       </div>
     </div>
   );
