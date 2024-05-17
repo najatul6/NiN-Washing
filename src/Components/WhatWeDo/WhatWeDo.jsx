@@ -1,9 +1,10 @@
 import { FaArrowRight } from "react-icons/fa6";
 import ImageCard from "../ImageCard/ImageCard";
 import Button from "../Shared/Button/Button";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const WhatWeDo = () => {
+  const location = useLocation();
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 justify-center items-center p-4 md:p-5">
       <div className="px-2 md:p-5">
@@ -27,13 +28,15 @@ const WhatWeDo = () => {
             discuss how we can assist with your home pressure washing needs.
           </p>
           <div>
-            <Link to="/about">
-              <Button
-                btnText="Learn More"
-                btnIcon={<FaArrowRight />}
-                extraClass="bg-deep-blue hover:bg-white hover:border-2 border-2 hover:border-deep-blue text-white hover:text-deep-blue p-2"
-              />
-            </Link>
+            {location.pathname === "/about" || (
+              <Link to="/about">
+                <Button
+                  btnText="Learn More"
+                  btnIcon={<FaArrowRight />}
+                  extraClass="bg-deep-blue hover:bg-white hover:border-2 border-2 hover:border-deep-blue text-white hover:text-deep-blue p-2"
+                />
+              </Link>
+            )}
           </div>
         </div>
       </div>
