@@ -79,6 +79,7 @@ const Header = () => {
         <div className="navbar-end">
           <Button
             btnText="Call Now"
+            url="tel:+8801773827414"
             afterIcn={<BiSolidPhoneCall />}
             extraClass="bg-deep-blue text-white border-2 border-deep-blue px-2 py-1 hover:bg-transparent hover:text-deep-blue animate-bounce"
           />
