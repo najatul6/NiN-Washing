@@ -12,7 +12,7 @@ const Contact = () => {
         title="Contact Us"
         subTitle="Need to book an appointment or an emergency help? Get in touch with us now and our representative will help you soon."
       />
-      <div>
+      <div className="my-5">
         <AppointmentForm/>
       </div>
     </div>
