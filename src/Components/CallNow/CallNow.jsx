@@ -1,12 +1,7 @@
-import { BiSolidPhoneCall } from "react-icons/bi";
 import image from "../../assets/Slider/1.jpg";
-import Button from "../Shared/Button/Button";
+import CallNowButton from "../Shared/CallNowButton/CallNowButton";
 
 const CallNow = () => {
-  // const phoneNumber = "+8801773827414";
-  // const handleCall = () => {
-  //   window.open(`tel:${phoneNumber}`);
-  // };
   return (
     <div className="flex flex-col md:flex-row">
       <div className="flex-1">
@@ -16,13 +11,7 @@ const CallNow = () => {
         <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-white">
           Our cleaning experts are only a call away!
         </h2>
-        
-          <Button
-            afterIcn={<BiSolidPhoneCall />}
-            url="wtai://wp/mc;18475555555"
-            btnText="Call Now"
-            extraClass="bg-deep-blue py-3 px-3 text-white border-2 hover:text-white-coffee hover:bg-transparent hover:border-white-coffee"
-          />
+        <CallNowButton phoneNumber="+8801773827414" />
       </div>
     </div>
   );
