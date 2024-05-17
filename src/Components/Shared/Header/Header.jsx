@@ -77,7 +77,11 @@ const Header = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <Button btnText="Call Now" afterIcn={<BiSolidPhoneCall />} extraClass="bg-deep-blue text-white px-2 py-1 hover:bg-white-coffee hover:text-white animate-bounce"/>
+          <Button
+            btnText="Call Now"
+            afterIcn={<BiSolidPhoneCall />}
+            extraClass="bg-deep-blue text-white border-2 border-deep-blue px-2 py-1 hover:bg-transparent hover:text-deep-blue animate-bounce"
+          />
         </div>
       </div>
     </>
