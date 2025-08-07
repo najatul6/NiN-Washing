@@ -55,7 +55,7 @@ const Footer = () => {
       <hr className="border-white py-1" />
       <p className="text-center text-xs md:text-sm text-white">
         Copyright &copy; 2024 The Pressure Is On Us | Designed by - 
-        <Link to="https://najatul6-cbc29.web.app/" target="_blank" className="text-white-coffee font-bold underline">
+        <Link to="https://najatul-islam.vercel.app/" target="_blank" className="text-white-coffee font-bold underline">
           Najatul Islam
         </Link>
       </p>
